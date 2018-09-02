@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{275F8434-8143-4F10-9877-9829435DDCD0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RobEnvMK</RootNamespace>
+    <AssemblyName>RobEnvMK</AssemblyName>
+    <StartupObject>RobEnvMK.MainClass</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationIcon>Resources\rbo bgn.ico</ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <SourceAnalysisOverrideSettingsFile>C:\Users\mkarcz\AppData\Roaming\ICSharpCode\SharpDevelop5\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <DebugType>Full</DebugType>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3D, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.Direct3DX, Version=1.0.2906.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomEventHandler.cs" />
+    <Compile Include="FormManageRobots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageRobots.Designer.cs">
+      <DependentUpon>FormManageRobots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRobotProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRobotProperties.Designer.cs">
+      <DependentUpon>FormRobotProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Icons.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icons.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Media\UI\ConfigurationSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Media\UI\Constants.cs" />
+    <Compile Include="Media\UI\FormRadarInit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Media\UI\FormRobotStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Media\UI\MainClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Media\UI\MkString.cs" />
+    <Compile Include="Media\UI\Robot.cs" />
+    <Compile Include="Media\UI\Sphere3D.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormManageRobots.resx">
+      <DependentUpon>FormManageRobots.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRobotProperties.resx">
+      <DependentUpon>FormRobotProperties.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icons.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Icons.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Media\UI\ConfigurationSetup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConfigurationSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Media\UI\FormRobotStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormRobotStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Media\UI\MainClass.resx">
+      <DependentUpon>MainClass.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Common\blue1.bmp" />
+    <None Include="Common\green1.bmp" />
+    <None Include="Common\jellow1.bmp" />
+    <None Include="Common\Lab04.bmp" />
+    <None Include="Common\Lab04_128x128.bmp" />
+    <None Include="Common\Lab04_256x256.bmp" />
+    <None Include="Common\metal5a.bmp" />
+    <None Include="Common\metal5b.bmp" />
+    <None Include="Common\perlbot5.pl" />
+    <None Include="Common\perlbot6.pl" />
+    <None Include="Common\ReadMe.txt" />
+    <None Include="Common\red1.bmp" />
+    <None Include="Common\SimpleWorldSetup.ini" />
+    <None Include="Common\SWSinstall.bat" />
+    <None Include="Common\unresponsive_test.pl" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="UserLicense.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Common\perlbot1.pl" />
+    <None Include="Common\perlbot2.pl" />
+    <None Include="Common\perlbot3.pl" />
+    <None Include="Common\perlbot4.pl" />
+    <None Include="Common\RobEnvMK_Run.bat" />
+    <None Include="Common\RobEnvMK_Setup.bat" />
+    <None Include="Common\robots.cfg" />
+    <None Include="Properties\DataSources\RobotProperties.datasource" />
+    <None Include="Resources\rbo bgn.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Media\SharedFx\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy /B /Y "$(TargetPath)" "C:\Users\Public\RobEnvMK"
+copy /Y "$(SolutionDir)\$(SolutionName)\Common\*.pl" "C:\Users\Public\RobEnvMK"
+copy /Y "$(SolutionDir)\$(SolutionName)\Common\*.exe" "C:\Users\Public\RobEnvMK"
+copy /Y "$(SolutionDir)\$(SolutionName)\Common\*.ini" "C:\Users\Public\RobEnvMK"
+copy /Y "$(SolutionDir)\$(SolutionName)\Common\*.bat" "C:\Users\Public\RobEnvMK"
+copy /Y "$(SolutionDir)\$(SolutionName)\Common\*.cfg" "C:\Users\Public\RobEnvMK"
+copy /Y "$(SolutionDir)\$(SolutionName)\Common\*.bmp" "C:\Users\Public\RobEnvMK"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

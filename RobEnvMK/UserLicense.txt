@@ -1,0 +1,49 @@
+﻿--------------------------------------------------------------
+Software:	Robots Maze Race, a simulation program.
+Copyright:	(C) 2005-2018 by Marek Karcz. All rights reserved.
+Author:		Marek Karcz (mkarcz@yahoo.com)
+--------------------------------------------------------------
+
+LICENSE:
+Software usage license agreement between Author and User.
+
+	User is free to install this software on as many PC 
+workstations as needed under condition that it will be for 
+solely personal, non-commercial use. For commercial use 
+and/or distribution/embedement in User's own software 
+product - the User (who in such scenario becomes a Software 
+Vendor), needs to obtain commercial license from Author.
+
+DISCLAIMER:
+Author of this Software shall not be held responsible
+for any damage resulting from its use. In the case that 
+local law does not allow such disclaimer, this agreement 
+shall be null and void and User has no right to install 
+and use the Software. 
+
+NO WARRANTY
+Use As Is at your own risk. There is NO WARRANTY provided
+and not even implied warranty that this software will work
+or is suitable for any particular purpose. Again, if local
+law does not permit warranty disclaimer, this agreement is
+null and void and User has no right to install and use the
+Software.
+
+CONTACT: makarcz@yahoo.com
+
+PRICE:
+This is a free product and assuming that User agreed to
+above conditions, the User is free to use it. However,
+If User likes this product and would like to support
+creativity of the Author, please send me a single US 
+dollar bill. Contact me first at provided e-mail address 
+to obtain postal address or PayPal account name.
+If User doesn't get a response in reasonable time, please 
+send amount of your choice to St. Jude Children's Research
+Hospital (www.stjude.org). (I am not affilliated with the
+St. Jude, just a fan of their work)
+
+Thank you and ENJOY!
+
+Marek Karcz
+8/25/2018

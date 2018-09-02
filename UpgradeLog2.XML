@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="RobEnvMK">
+</Property><Property Name="Solution File" Value="C:\src\AIRobotsEnvMK\RobEnvMK.sln">
+</Property><Property Name="User Options File" Value="C:\src\AIRobotsEnvMK\RobEnvMK.suo">
+</Property><Property Name="Date" Value="Thursday, October 14, 2010">
+</Property><Property Name="Time" Value="3:25 AM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="RobEnvMK.sln" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK.sln">
+</Event><Event ErrorLevel="0" Project="" Source="RobEnvMK.suo" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK.suo">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\RobEnvMK.csproj" Description="Project file successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\RobEnvMK.csproj">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\RobEnvMK.csproj.user" Description="Project user file successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\RobEnvMK.csproj.user">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\CustomEventHandler.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\CustomEventHandler.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\FormManageRobots.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\FormManageRobots.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\FormManageRobots.Designer.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\FormManageRobots.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\FormRobotProperties.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\FormRobotProperties.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\FormRobotProperties.Designer.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\FormRobotProperties.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Icons.Designer.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Icons.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Media\UI\ConfigurationSetup.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Media\UI\ConfigurationSetup.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Media\UI\Constants.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Media\UI\Constants.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Media\UI\FormRadarInit.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Media\UI\FormRadarInit.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Media\UI\FormRobotStatus.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Media\UI\FormRobotStatus.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Media\UI\MainClass.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Media\UI\MainClass.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Media\UI\MkString.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Media\UI\MkString.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Media\UI\Robot.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Media\UI\Robot.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Media\UI\Sphere3D.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Media\UI\Sphere3D.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Common\SWSinstall.bat" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Common\SWSinstall.bat">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Properties\Settings.settings" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Common\perlbot1.pl" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Common\perlbot1.pl">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Common\perlbot2.pl" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Common\perlbot2.pl">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Common\perlbot3.pl" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Common\perlbot3.pl">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Common\perlbot4.pl" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Common\perlbot4.pl">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Common\RobEnvMK_Run.bat" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Common\RobEnvMK_Run.bat">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Common\RobEnvMK_Setup.bat" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Common\RobEnvMK_Setup.bat">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Common\robots.cfg" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Common\robots.cfg">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Properties\DataSources\RobotProperties.datasource" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Properties\DataSources\RobotProperties.datasource">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Resources\rbo bgn.ico" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Resources\rbo bgn.ico">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Common\WorkJournal.txt" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Common\WorkJournal.txt">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\FormManageRobots.resx" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\FormManageRobots.resx">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\FormRobotProperties.resx" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\FormRobotProperties.resx">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Icons.resx" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Icons.resx">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Media\UI\ConfigurationSetup.resx" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Media\UI\ConfigurationSetup.resx">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Media\UI\FormRobotStatus.resx" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Media\UI\FormRobotStatus.resx">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Media\UI\MainClass.resx" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Media\UI\MainClass.resx">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\Properties\Resources.resx" Description="File successfully backed up as C:\src\AIRobotsEnvMK\Backup\RobEnvMK\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\RobEnvMK.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RobEnvMK" Source="RobEnvMK\RobEnvMK.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="RobEnvMK.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="RobEnvMK.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RobEnvMK" Source="RobEnvMK\RobEnvMK.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

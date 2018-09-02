@@ -1,0 +1,26 @@
+C:\Users\mkarcz\Documents\Visual Studio 2005\Projects\RobEnvMK\RobEnvMK\obj\Release\RobEnvMK.exe
+C:\Users\mkarcz\Documents\Visual Studio 2005\Projects\RobEnvMK\RobEnvMK\obj\Release\RobEnvMK.pdb
+C:\Users\mkarcz\Documents\Visual Studio 2005\Projects\RobEnvMK\RobEnvMK\obj\Release\ResolveAssemblyReference.cache
+C:\Users\mkarcz\Documents\Visual Studio 2005\Projects\RobEnvMK\RobEnvMK\obj\Release\RobEnvMK.ConfigurationForm.resources
+C:\Users\mkarcz\Documents\Visual Studio 2005\Projects\RobEnvMK\RobEnvMK\obj\Release\RobEnvMK.FormRobotStatus.resources
+C:\Users\mkarcz\Documents\Visual Studio 2005\Projects\RobEnvMK\RobEnvMK\obj\Release\RobEnvMK.Properties.Resources.resources
+C:\Users\mkarcz\Documents\Visual Studio 2005\Projects\RobEnvMK\RobEnvMK\obj\Release\RobEnvMK.csproj.GenerateResource.Cache
+C:\Users\mkarcz\Documents\Visual Studio 2005\Projects\RobEnvMK\RobEnvMK\bin\Release\RobEnvMK.exe
+C:\Users\mkarcz\Documents\Visual Studio 2005\Projects\RobEnvMK\RobEnvMK\bin\Release\RobEnvMK.pdb
+C:\Users\mkarcz\Documents\Visual Studio 2005\Projects\RobEnvMK\RobEnvMK\obj\Release\RobEnvMK.Icons.resources
+C:\Users\mkarcz\Documents\Visual Studio 2005\Projects\RobEnvMK\RobEnvMK\obj\Release\RobEnvMK.MainClass.resources
+C:\src\AIRobotsEnvMK\RobEnvMK\obj\Release\RobEnvMK.pdb
+C:\src\AIRobotsEnvMK\RobEnvMK\bin\Release\RobEnvMK.exe
+C:\src\AIRobotsEnvMK\RobEnvMK\bin\Release\RobEnvMK.pdb
+C:\src\AIRobotsEnvMK\RobEnvMK\obj\Release\ResolveAssemblyReference.cache
+C:\src\AIRobotsEnvMK\RobEnvMK\obj\Release\RobEnvMK.Icons.resources
+C:\src\AIRobotsEnvMK\RobEnvMK\obj\Release\RobEnvMK.ConfigurationForm.resources
+C:\src\AIRobotsEnvMK\RobEnvMK\obj\Release\RobEnvMK.FormRobotStatus.resources
+C:\src\AIRobotsEnvMK\RobEnvMK\obj\Release\RobEnvMK.MainClass.resources
+C:\src\AIRobotsEnvMK\RobEnvMK\obj\Release\RobEnvMK.Properties.Resources.resources
+C:\src\AIRobotsEnvMK\RobEnvMK\obj\Release\RobEnvMK.exe
+C:\src\AIRobotsEnvMK\RobEnvMK\obj\Release\RobEnvMK.FormManageRobots.resources
+C:\src\AIRobotsEnvMK\RobEnvMK\obj\Release\RobEnvMK.FormRobotProperties.resources
+C:\src\AIRobotsEnvMK\RobEnvMK\bin\Release\RobEnvMK.exe.config
+C:\src\AIRobotsEnvMK\RobEnvMK\obj\Release\GenerateResource-ResGen.read.1.tlog
+C:\src\AIRobotsEnvMK\RobEnvMK\obj\Release\GenerateResource-ResGen.write.1.tlog

@@ -1,0 +1,9 @@
+bin\Release\RobEnvMK.exe
+bin\Release\RobEnvMK.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\RobEnvMK.Properties.Resources.resources
+obj\Release\RobEnvMK.csproj.GenerateResource.Cache
+obj\Release\RobEnvMK.exe
+obj\Release\RobEnvMK.pdb
+obj\Release\RobEnvMK.ConfigurationForm.resources
+obj\Release\RobEnvMK.FormRobotStatus.resources

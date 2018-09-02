@@ -1,0 +1,14 @@
+C:\src\csharp\AIRobotsEnvMK\RobEnvMK\bin\Debug\RobEnvMK.exe.config
+C:\src\csharp\AIRobotsEnvMK\RobEnvMK\bin\Debug\RobEnvMK.exe
+C:\src\csharp\AIRobotsEnvMK\RobEnvMK\obj\Debug\ResolveAssemblyReference.cache
+C:\src\csharp\AIRobotsEnvMK\RobEnvMK\obj\Debug\RobEnvMK.FormManageRobots.resources
+C:\src\csharp\AIRobotsEnvMK\RobEnvMK\obj\Debug\RobEnvMK.FormRobotProperties.resources
+C:\src\csharp\AIRobotsEnvMK\RobEnvMK\obj\Debug\RobEnvMK.Icons.resources
+C:\src\csharp\AIRobotsEnvMK\RobEnvMK\obj\Debug\RobEnvMK.ConfigurationForm.resources
+C:\src\csharp\AIRobotsEnvMK\RobEnvMK\obj\Debug\RobEnvMK.FormRobotStatus.resources
+C:\src\csharp\AIRobotsEnvMK\RobEnvMK\obj\Debug\RobEnvMK.MainClass.resources
+C:\src\csharp\AIRobotsEnvMK\RobEnvMK\obj\Debug\RobEnvMK.Properties.Resources.resources
+C:\src\csharp\AIRobotsEnvMK\RobEnvMK\obj\Debug\RobEnvMK.csproj.GenerateResource.Cache
+C:\src\csharp\AIRobotsEnvMK\RobEnvMK\obj\Debug\RobEnvMK.exe
+C:\src\csharp\AIRobotsEnvMK\RobEnvMK\bin\Debug\RobEnvMK.pdb
+C:\src\csharp\AIRobotsEnvMK\RobEnvMK\obj\Debug\RobEnvMK.pdb

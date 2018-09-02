@@ -1,0 +1,167 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RobEnvMK</name>
+    </assembly>
+    <members>
+        <member name="T:RobEnvMK.Constants">
+            <summary>
+            Class to keep constant values common to all classes.
+            </summary>
+            <remarks>
+            	created by - Marek Karcz
+            	created on - 2/28/2005 11:47:30 PM
+            </remarks>
+        </member>
+        <member name="M:RobEnvMK.Constants.#ctor">
+            <summary>
+            Default constructor - initializes all fields to default values
+            </summary>
+        </member>
+        <member name="T:RobEnvMK.MainClass">
+            <summary>
+            This is the main class of my Direct3D application
+            </summary>
+        </member>
+        <member name="F:RobEnvMK.MainClass.device">
+            <summary>
+            The rendering device
+            </summary>
+        </member>
+        <member name="M:RobEnvMK.MainClass.ConvertMapToInt">
+            <summary>
+            ConvertMapToInt ()
+            Convert bitmap file to internal world map representation.
+            Cuurently internat format is represented by 2D integer array
+            with 0/1 binary values.
+            </summary>
+        </member>
+        <member name="M:RobEnvMK.MainClass.FrameMove">
+            <summary>
+            This method moves the scene
+            </summary>
+        </member>
+        <member name="M:RobEnvMK.MainClass.Render">
+            <summary>
+            This method renders the scene
+            </summary>
+        </member>
+        <member name="M:RobEnvMK.MainClass.Run">
+            <summary>
+            Our mainloop
+            </summary>
+        </member>
+        <member name="M:RobEnvMK.MainClass.Main(System.String[])">
+            <summary>
+            The main entry point for the application
+            </summary>
+        </member>
+        <member name="T:RobEnvMK.RadarPoint">
+            <summary>
+            This class represents radar vector of one point on the map.
+            </summary>
+        </member>
+        <member name="M:RobEnvMK.RadarPoint.#ctor(System.Int32[0:,0:],RobEnvMK.MainClass,System.Int32,System.Int32)">
+            <summary>
+            Calculate radar vector.
+            </summary>
+        </member>
+        <member name="M:RobEnvMK.RadarPoint.CheckBodyInCollision(System.Single,System.Single,System.Single,RobEnvMK.MainClass)">
+            <summary>
+            Check if robot's body is touching obstacle.
+            </summary>
+        </member>
+        <member name="M:RobEnvMK.RadarPoint.GetReadAtAngle(System.Single)">
+            <summary>
+            Get radar reading at given angle.
+            </summary>
+        </member>
+        <member name="M:RobEnvMK.RadarPoint.GetReadAtStep(System.Int32)">
+            <summary>
+            Get radar reading at given index.
+            </summary>
+        </member>
+        <member name="T:RobEnvMK.RadarInfo">
+            <summary>
+            This class holds the radar information used to detect if new radar
+            file should be generated.
+            </summary>
+        </member>
+        <member name="M:RobEnvMK.RadarInfo.#ctor(RobEnvMK.RadarPoint[0:,0:],System.Single,System.String,System.Int32,System.Double)">
+            <summary>
+            Constructor.
+            </summary>
+        </member>
+        <member name="M:RobEnvMK.RadarInfo.IsRadarFileValid(System.String,System.Single,System.Int32,System.Double)">
+            <summary>
+            Check if existing radar file can be used.
+            </summary>
+        </member>
+        <member name="T:RobEnvMK.Robot">
+            <summary>
+            Robot interface class to the Robot Environment.
+            </summary>
+        </member>
+        <member name="M:RobEnvMK.Robot.Move">
+            <summary>
+            Change Robot's coordinates depending on the direction the Robot
+            is facing.
+            </summary>
+        </member>
+        <member name="M:RobEnvMK.Robot.Collision(System.Single,System.Single,System.Single)">
+            <summary>
+            Collision detection.
+            </summary>
+            <param name="xb">current robot's X coordinate</param>
+            <param name="yb">current robot's Y coordinate</param>
+            <param name="angle"></param>
+            <returns>true if collision detected in the next step</returns>
+        </member>
+        <member name="M:RobEnvMK.Robot.CheckBodyInCollision(System.Single,System.Single,System.Single)">
+            <summary>
+             Check if any part of robot's body is in collision with obstacle
+             in the next step.
+             </summary>
+             <param name="x">robot's x coordinate in the next step</param>
+             <param name="y">robot's y coordinate in the next step</param>
+             <param name="angle">angle of robot's movement direction</param>
+             <param name="size">the size of robot</param>
+             <returns>bool true if body is in collision with obstacle</returns>
+        </member>
+        <member name="T:RobEnvMK.MkString">
+            <summary>
+            Simplified and optimized for speed string class.
+            </summary>
+            <remarks>
+            	created by - Marek Karcz
+            	created on - 10/30/2005 10:48:36 PM
+            </remarks>
+        </member>
+        <member name="M:RobEnvMK.MkString.#ctor">
+            <summary>
+            Default constructor - initializes all fields to default values
+            </summary>
+        </member>
+        <member name="T:RobEnvMK.Sphere3D">
+            <summary>
+            Summary description for Sphere3D.
+            </summary>
+        </member>
+        <member name="T:RobEnvMK.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:RobEnvMK.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:RobEnvMK.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
