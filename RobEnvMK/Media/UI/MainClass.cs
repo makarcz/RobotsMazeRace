@@ -309,7 +309,7 @@ namespace RobEnvMK
 			m_nVertices = CountVerticesNumberFromBmp (m_WorldBmp);
             m_fRobotGoalSize = (float)m_Config.GetRobotSize();
 			
-			if (RadarInfo.IsRadarFileValid (m_sMapImagePath, /*m_fRobotSize,*/ Constants.RADAR_RESN, m_Config.GetSightDistance ()))
+			if (RadarInfo.IsRadarFileValid (m_sMapImagePath, Constants.RADAR_RESN, m_Config.GetSightDistance ()))
 			{
 				RadarInfo RadarInfoObj = RadarInfo.DeserializeRadar (m_sMapImagePath);
 				m_RadarInfo = RadarInfoObj;
@@ -469,26 +469,26 @@ namespace RobEnvMK
 		void KillAllRobots ()
 		{
 			Trace.WriteLine ("KillAllRobots...");
-			StatusLog ("Killing all robots...");
+			StatusLog (global::RobEnvMK.Properties.Resources.Text_KillingAllRobots);
 			foreach (Process proc in m_aProcessList) {
 				if (null != proc && !proc.HasExited) {
-					LogMsg("Stopping process " + proc.Id + "...");
+					LogMsg(global::RobEnvMK.Properties.Resources.Text_StoppingProcess + " " + proc.Id + "...");
 					proc.EnableRaisingEvents = false;
 					proc.Kill ();
 					proc.WaitForExit();
 					if (proc.HasExited)	{
-						LogMsg ("DONE.");
+						LogMsg (global::RobEnvMK.Properties.Resources.Text_Done01);
 						proc.Dispose ();	// 'Dispose' calls 'Close'
 					}
 					else {
-						LogMsg ("FAILED.");
+						LogMsg (global::RobEnvMK.Properties.Resources.Text_Failed01);
 					}
 				}
 			}
 			for (int i = 0; i < m_aProcessList.Length; i++) {
 				m_aProcessList[i] = null;
 			}
-			RaceReportEvent("Race failed. All robots were killed.");
+			RaceReportEvent(global::RobEnvMK.Properties.Resources.Text_RaceFailed01);
 		}
 		
 		void SpawnRobots (float x, double y, double step, double size)
@@ -607,7 +607,7 @@ namespace RobEnvMK
         {
             if (m_Config.CloseWhenAllBotsQuit())
             {
-                LogMsg("There is no responding robot process present.");
+                LogMsg(global::RobEnvMK.Properties.Resources.Text_NoRespondingBot01);
 				StopTimer();
 				RaceReportFooter();
 				if (null != m_RobStat) {
@@ -637,7 +637,7 @@ namespace RobEnvMK
 			m_bRender = false;
             if (0 >= m_aProcessList.Length)
             {
-                StatusLog("There are no robots...");
+                StatusLog(global::RobEnvMK.Properties.Resources.Text_NoBots01);
                 Trace.WriteLine("There are no robots...");
                 return;
             }
@@ -656,7 +656,7 @@ namespace RobEnvMK
 					{
 						naProc2Kill [k++] = i;
 						ConfirmRobotKill (i);
-						LogMsg ("Kill request confirmed for robot #" + i);
+						LogMsg (global::RobEnvMK.Properties.Resources.Text_KillReqConf01 + i);
 					}
 					else
 					{
@@ -688,7 +688,8 @@ namespace RobEnvMK
 						    	
 								if (!p.HasExited && p.Responding) {
 						    		
-									LogMsg("Robot process " + p.Id + " decided to quit.");
+									LogMsg(global::RobEnvMK.Properties.Resources.Text_RobotProcess01 
+									       	+ " " + p.Id + " " + global::RobEnvMK.Properties.Resources.Text_DecidedToQuit01);
 									
 								} else
 									Trace.WriteLine("WARNING: Process " + p + " already exited.");
@@ -712,7 +713,11 @@ namespace RobEnvMK
 							    }
 						    } else {
 						    	
-								LogMsg(global::RobEnvMK.Properties.Resources.RobotNumber + i + " has been killed, process " + p.Id + " will be terminated.");
+								LogMsg(global::RobEnvMK.Properties.Resources.RobotNumber + i
+						    	       + " " + global::RobEnvMK.Properties.Resources.Text_HasBeenKilled01
+						    	       + ", " + global::RobEnvMK.Properties.Resources.Text_Process01 + " " + p.Id
+						    	       + " " + global::RobEnvMK.Properties.Resources.Text_WillBeTerminated01);
+						    	
 								naProc2Kill[k++] = i;						    	
 						    }
   
@@ -727,13 +732,19 @@ namespace RobEnvMK
 					    	m_anRobotsIdleSteps[i]++;
 					    	
 					    	if (bShowAllBotsLog || nSelBot == i) {
-					    		LogMsg(global::RobEnvMK.Properties.Resources.RobotNumber + i + ":" + m_saRobotsList[i] + ": EMPTY output queue.|[" + m_anRobotsIdleSteps[i] + "]");
+					    		
+					    		LogMsg(global::RobEnvMK.Properties.Resources.RobotNumber + i + ":" + m_saRobotsList[i]
+					    		       + ": " + global::RobEnvMK.Properties.Resources.Text_EmptyOutputQueue01
+					    		       + "|[" + m_anRobotsIdleSteps[i] + "]");
 					    	}
 					    	
 					    	if (m_anRobotsIdleSteps[i] > m_Config.MaxIdleSteps) {
 					    		
-					    		LogMsg(global::RobEnvMK.Properties.Resources.RobotNumber + i + ":" + m_saRobotsList[i] + ": Too many idle steps. Robot will be killed.");
-					    		RaceReportEvent(global::RobEnvMK.Properties.Resources.RobotNumber + i + ":" + m_saRobotsList[i] + ": TIMEOUT.");
+					    		LogMsg(global::RobEnvMK.Properties.Resources.RobotNumber + i + ":" + m_saRobotsList[i]
+					    		       + ": " + global::RobEnvMK.Properties.Resources.Text_TooManyIdleSteps01
+					    		       + " " + global::RobEnvMK.Properties.Resources.Text_RobotWillBeKilled01);
+					    		RaceReportEvent(global::RobEnvMK.Properties.Resources.RobotNumber + i + ":" + m_saRobotsList[i]
+					    		                + ": " + global::RobEnvMK.Properties.Resources.Text_Timeout01);
 					    		naProc2Kill[k++] = i;
 					    	}
 					    }
@@ -754,8 +765,10 @@ namespace RobEnvMK
 						    	if (m_aRobotsStuckCounters[i].steps > m_Config.MaxStuckSteps) {
 					    		
 						    		// yes, stuck counter exceeded allowed maximum, robot will be terminated (stuck or looping)
-						    		LogMsg(global::RobEnvMK.Properties.Resources.RobotNumber + i + ":" + m_saRobotsList[i] + ": Robot stuck in one position for too long will be killed.");
-						    		RaceReportEvent(global::RobEnvMK.Properties.Resources.RobotNumber + i + ":" + m_saRobotsList[i] + ": STUCK. [" 
+						    		LogMsg(global::RobEnvMK.Properties.Resources.RobotNumber + i + ":" + m_saRobotsList[i]
+						    		       + ": " + global::RobEnvMK.Properties.Resources.Text_RobotStuck01);
+						    		RaceReportEvent(global::RobEnvMK.Properties.Resources.RobotNumber + i + ":" + m_saRobotsList[i]
+						    		                + ": " + global::RobEnvMK.Properties.Resources.Text_Stuck01 + " ["
 						    		                + m_aRobotsStuckCounters[i].x + " , " + m_aRobotsStuckCounters[i].y + "] - [" 
 						    		                + robot.PosX + " , " + robot.PosY + "] : [" + fDist + "]");
 						    		naProc2Kill[k++] = i;
@@ -772,7 +785,10 @@ namespace RobEnvMK
 						    	m_aRobotsStuckCounters[i].x = robot.PosX;
 						    	m_aRobotsStuckCounters[i].y = robot.PosY;
 						    	if (bShowAllBotsLog || nSelBot == i) {
-						    		LogMsg(global::RobEnvMK.Properties.Resources.RobotNumber + i + ":" + m_saRobotsList[i] + ": Stuck counter RESET.");
+						    		
+						    		LogMsg(global::RobEnvMK.Properties.Resources.RobotNumber + i + ":" + m_saRobotsList[i]
+						    		       + ": " + global::RobEnvMK.Properties.Resources.Text_StuckCounter01
+						    		       + " " + global::RobEnvMK.Properties.Resources.Text_Reset01);
 						    	}
 						    }
 						}
@@ -781,7 +797,9 @@ namespace RobEnvMK
 				}
 				else {
 					if (bShowAllBotsLog || nSelBot == i) {
-                    	LogMsg(global::RobEnvMK.Properties.Resources.RobotNumber + i + " is not responding or has exited.");
+						
+                    	LogMsg(global::RobEnvMK.Properties.Resources.RobotNumber + i
+						       + " " + global::RobEnvMK.Properties.Resources.Text_IsNotResponding01);
 					}
 				}
 				i++;
@@ -802,8 +820,13 @@ namespace RobEnvMK
                         					? m_asqRobotOutput[bot_num].Dequeue() : string.Empty;
                         if (sResponse != "Reset")
                         {
-                        	RaceReportEvent(global::RobEnvMK.Properties.Resources.RobotNumber + bot_num + " killed at step " + m_nStep);
-                        	LogMsg("Exiting " + global::RobEnvMK.Properties.Resources.RobotNumber + bot_num + ", process id " + p2k.Id + "...");
+                        	RaceReportEvent(global::RobEnvMK.Properties.Resources.RobotNumber + bot_num
+                        	                + " " + global::RobEnvMK.Properties.Resources.Text_KilledAt01
+                        	                + " " + global::RobEnvMK.Properties.Resources.Text_Step01 + " " + m_nStep);
+                        	LogMsg(global::RobEnvMK.Properties.Resources.Text_Exiting01
+                        	       + " " + global::RobEnvMK.Properties.Resources.RobotNumber + bot_num
+                        	       + ", " + global::RobEnvMK.Properties.Resources.Text_Process01
+                        	       + " " + global::RobEnvMK.Properties.Resources.Text_Id01 + " " + p2k.Id + "...");
 							if (!p2k.HasExited) {
                         		
 								p2k.Kill();
@@ -812,16 +835,16 @@ namespace RobEnvMK
 							if (p2k.HasExited) {
                         		
 								p2k.Dispose();
-								LogMsg("DONE.");
+								LogMsg(global::RobEnvMK.Properties.Resources.Text_Done01);
 								
                         	} else {
                         		
-								LogMsg("FAILED.");
+								LogMsg(global::RobEnvMK.Properties.Resources.Text_Failed01);
                         	}
                         	m_aProcessList[bot_num] = null;
                         }
                         else
-                            robot.ProcessCommand("Reset");
+                            robot.ProcessCommand(global::RobEnvMK.Properties.Resources.Text_Reset02);
 					}
                     Thread.Sleep(0);
 				}
@@ -1139,7 +1162,7 @@ namespace RobEnvMK
 			
 			try
 			{
-				m_RadarInfo = new RadarInfo (m_aRadar, /*m_fRobotSize,*/ m_sMapImagePath, Constants.RADAR_RESN, m_Config.GetSightDistance ());
+				m_RadarInfo = new RadarInfo (m_aRadar, m_sMapImagePath, Constants.RADAR_RESN, m_Config.GetSightDistance ());
 				m_RadarInfo.SerializeRadar ();
 			}
 			catch(Exception e)
@@ -2291,7 +2314,6 @@ namespace RobEnvMK
     public sealed class RadarInfo
     {
         RadarPoint[,] m_aRadar;
-        //double m_fRobotSize;
         string m_sBitmapPath;
         int m_nRadarSize;
         double m_fSightDistance;
@@ -2304,10 +2326,9 @@ namespace RobEnvMK
         /// <summary>
         /// Constructor.
         /// </summary>
-        public RadarInfo(RadarPoint[,] radar, /*double robotsize,*/ string bitmappath, int radarsize, double sightdistance)
+        public RadarInfo(RadarPoint[,] radar, string bitmappath, int radarsize, double sightdistance)
         {
             m_aRadar = radar;
-            //m_fRobotSize = robotsize;
             m_sBitmapPath = bitmappath;
             m_nRadarSize = radarsize;
             m_fSightDistance = sightdistance;
@@ -2316,14 +2337,13 @@ namespace RobEnvMK
         /// <summary>
         /// Check if existing radar file can be used.
         /// </summary>
-        public static bool IsRadarFileValid(string bitmappath, /*double robotsize,*/ int radarsize, double sightdistance)
+        public static bool IsRadarFileValid(string bitmappath, int radarsize, double sightdistance)
         {
             bool bRet = false;
             RadarInfo RadarInfoObj;
             if (null != (RadarInfoObj = DeserializeRadar(bitmappath)))
             {
-                if (/*Math.Abs(RadarInfoObj.m_fRobotSize - robotsize) < Constants.EPSILON
-				    &&*/ RadarInfoObj.m_nRadarSize == radarsize
+                if (RadarInfoObj.m_nRadarSize == radarsize
 				    && Math.Abs(RadarInfoObj.m_fSightDistance - sightdistance) < Constants.EPSILON
 				    && RadarInfoObj.MapFileOlderThanRadarFile(bitmappath)) {
             		

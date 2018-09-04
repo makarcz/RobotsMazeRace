@@ -762,4 +762,82 @@
   <data name="Text_RaceFailed" xml:space="preserve">
     <value>Race failed. All robots died before reaching finish line.</value>
   </data>
+  <data name="Text_KillingAllRobots" xml:space="preserve">
+    <value>Killing all robots...</value>
+  </data>
+  <data name="Text_StoppingProcess" xml:space="preserve">
+    <value>Stopping process</value>
+  </data>
+  <data name="Text_Done01" xml:space="preserve">
+    <value>DONE.</value>
+  </data>
+  <data name="Text_Failed01" xml:space="preserve">
+    <value>FAILED.</value>
+  </data>
+  <data name="Text_RaceFailed01" xml:space="preserve">
+    <value>Race failed. All robots were killed.</value>
+  </data>
+  <data name="Text_NoRespondingBot01" xml:space="preserve">
+    <value>There is no responding robot process present.</value>
+  </data>
+  <data name="Text_NoBots01" xml:space="preserve">
+    <value>There are no robots...</value>
+  </data>
+  <data name="Text_KillReqConf01" xml:space="preserve">
+    <value>Kill request confirmed for robot#</value>
+  </data>
+  <data name="Text_RobotProcess01" xml:space="preserve">
+    <value>Robot process</value>
+  </data>
+  <data name="Text_DecidedToQuit01" xml:space="preserve">
+    <value>decided to quit.</value>
+  </data>
+  <data name="Text_HasBeenKilled01" xml:space="preserve">
+    <value>has been killed</value>
+  </data>
+  <data name="Text_Process01" xml:space="preserve">
+    <value>process</value>
+  </data>
+  <data name="Text_WillBeTerminated01" xml:space="preserve">
+    <value>will be terminated.</value>
+  </data>
+  <data name="Text_EmptyOutputQueue01" xml:space="preserve">
+    <value>EMPTY output queue.</value>
+  </data>
+  <data name="Text_TooManyIdleSteps01" xml:space="preserve">
+    <value>Too many idle steps.</value>
+  </data>
+  <data name="Text_RobotWillBeKilled01" xml:space="preserve">
+    <value>Robot will be killed.</value>
+  </data>
+  <data name="Text_Timeout01" xml:space="preserve">
+    <value>TIMEOUT.</value>
+  </data>
+  <data name="Text_RobotStuck01" xml:space="preserve">
+    <value>Robot stuck in one position for too long will be killed.</value>
+  </data>
+  <data name="Text_Stuck01" xml:space="preserve">
+    <value>STUCK.</value>
+  </data>
+  <data name="Text_StuckCounter01" xml:space="preserve">
+    <value>Stuck counter</value>
+  </data>
+  <data name="Text_Reset01" xml:space="preserve">
+    <value>RESET.</value>
+  </data>
+  <data name="Text_IsNotResponding01" xml:space="preserve">
+    <value>is not responding or has exited.</value>
+  </data>
+  <data name="Text_Step01" xml:space="preserve">
+    <value>step</value>
+  </data>
+  <data name="Text_Exiting01" xml:space="preserve">
+    <value>Exiting</value>
+  </data>
+  <data name="Text_Id01" xml:space="preserve">
+    <value>id</value>
+  </data>
+  <data name="Text_Reset02" xml:space="preserve">
+    <value>Reset</value>
+  </data>
 </root>

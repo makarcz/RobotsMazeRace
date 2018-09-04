@@ -557,11 +557,56 @@ namespace RobEnvMK.Properties {
 		}
 		
 		/// <summary>
+		///   Looks up a localized string similar to decided to quit..
+		/// </summary>
+		internal static string Text_DecidedToQuit01 {
+			get {
+				return ResourceManager.GetString("Text_DecidedToQuit01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to DONE..
+		/// </summary>
+		internal static string Text_Done01 {
+			get {
+				return ResourceManager.GetString("Text_Done01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
 		///   Looks up a localized string similar to *  Edge collided with wall at step:.
 		/// </summary>
 		internal static string Text_EdgeCollidedWithWallAtStep {
 			get {
 				return ResourceManager.GetString("Text_EdgeCollidedWithWallAtStep", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to EMPTY output queue..
+		/// </summary>
+		internal static string Text_EmptyOutputQueue01 {
+			get {
+				return ResourceManager.GetString("Text_EmptyOutputQueue01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to Exiting.
+		/// </summary>
+		internal static string Text_Exiting01 {
+			get {
+				return ResourceManager.GetString("Text_Exiting01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to FAILED..
+		/// </summary>
+		internal static string Text_Failed01 {
+			get {
+				return ResourceManager.GetString("Text_Failed01", resourceCulture);
 			}
 		}
 		
@@ -584,11 +629,38 @@ namespace RobEnvMK.Properties {
 		}
 		
 		/// <summary>
+		///   Looks up a localized string similar to has been killed.
+		/// </summary>
+		internal static string Text_HasBeenKilled01 {
+			get {
+				return ResourceManager.GetString("Text_HasBeenKilled01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
 		///   Looks up a localized string similar to Hit the wall once and die..
 		/// </summary>
 		internal static string Text_HitTheWallOnceAndDie {
 			get {
 				return ResourceManager.GetString("Text_HitTheWallOnceAndDie", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to id.
+		/// </summary>
+		internal static string Text_Id01 {
+			get {
+				return ResourceManager.GetString("Text_Id01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to is not responding or has exited..
+		/// </summary>
+		internal static string Text_IsNotResponding01 {
+			get {
+				return ResourceManager.GetString("Text_IsNotResponding01", resourceCulture);
 			}
 		}
 		
@@ -602,11 +674,56 @@ namespace RobEnvMK.Properties {
 		}
 		
 		/// <summary>
+		///   Looks up a localized string similar to Killing all robots....
+		/// </summary>
+		internal static string Text_KillingAllRobots {
+			get {
+				return ResourceManager.GetString("Text_KillingAllRobots", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to Kill request confirmed for robot#.
+		/// </summary>
+		internal static string Text_KillReqConf01 {
+			get {
+				return ResourceManager.GetString("Text_KillReqConf01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
 		///   Looks up a localized string similar to name:.
 		/// </summary>
 		internal static string Text_Name01 {
 			get {
 				return ResourceManager.GetString("Text_Name01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to There are no robots....
+		/// </summary>
+		internal static string Text_NoBots01 {
+			get {
+				return ResourceManager.GetString("Text_NoBots01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to There is no responding robot process present..
+		/// </summary>
+		internal static string Text_NoRespondingBot01 {
+			get {
+				return ResourceManager.GetString("Text_NoRespondingBot01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to process.
+		/// </summary>
+		internal static string Text_Process01 {
+			get {
+				return ResourceManager.GetString("Text_Process01", resourceCulture);
 			}
 		}
 		
@@ -625,6 +742,15 @@ namespace RobEnvMK.Properties {
 		internal static string Text_RaceFailed {
 			get {
 				return ResourceManager.GetString("Text_RaceFailed", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to Race failed. All robots were killed..
+		/// </summary>
+		internal static string Text_RaceFailed01 {
+			get {
+				return ResourceManager.GetString("Text_RaceFailed01", resourceCulture);
 			}
 		}
 		
@@ -656,6 +782,24 @@ namespace RobEnvMK.Properties {
 		}
 		
 		/// <summary>
+		///   Looks up a localized string similar to RESET..
+		/// </summary>
+		internal static string Text_Reset01 {
+			get {
+				return ResourceManager.GetString("Text_Reset01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to Reset.
+		/// </summary>
+		internal static string Text_Reset02 {
+			get {
+				return ResourceManager.GetString("Text_Reset02", resourceCulture);
+			}
+		}
+		
+		/// <summary>
 		///   Looks up a localized string similar to Results:.
 		/// </summary>
 		internal static string Text_Results01 {
@@ -674,11 +818,38 @@ namespace RobEnvMK.Properties {
 		}
 		
 		/// <summary>
+		///   Looks up a localized string similar to Robot process.
+		/// </summary>
+		internal static string Text_RobotProcess01 {
+			get {
+				return ResourceManager.GetString("Text_RobotProcess01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
 		///   Looks up a localized string similar to Robots config saved. Refresh/reload by pressing SHIFT+S in the main window..
 		/// </summary>
 		internal static string Text_RobotsConfigSaved {
 			get {
 				return ResourceManager.GetString("Text_RobotsConfigSaved", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to Robot stuck in one position for too long will be killed..
+		/// </summary>
+		internal static string Text_RobotStuck01 {
+			get {
+				return ResourceManager.GetString("Text_RobotStuck01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to Robot will be killed..
+		/// </summary>
+		internal static string Text_RobotWillBeKilled01 {
+			get {
+				return ResourceManager.GetString("Text_RobotWillBeKilled01", resourceCulture);
 			}
 		}
 		
@@ -701,6 +872,33 @@ namespace RobEnvMK.Properties {
 		}
 		
 		/// <summary>
+		///   Looks up a localized string similar to step.
+		/// </summary>
+		internal static string Text_Step01 {
+			get {
+				return ResourceManager.GetString("Text_Step01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to Stopping process.
+		/// </summary>
+		internal static string Text_StoppingProcess {
+			get {
+				return ResourceManager.GetString("Text_StoppingProcess", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to STUCK..
+		/// </summary>
+		internal static string Text_Stuck01 {
+			get {
+				return ResourceManager.GetString("Text_Stuck01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
 		///   Looks up a localized string similar to Stuck bot radius:.
 		/// </summary>
 		internal static string Text_StuckBotRadius {
@@ -710,11 +908,47 @@ namespace RobEnvMK.Properties {
 		}
 		
 		/// <summary>
+		///   Looks up a localized string similar to Stuck counter.
+		/// </summary>
+		internal static string Text_StuckCounter01 {
+			get {
+				return ResourceManager.GetString("Text_StuckCounter01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
 		///   Looks up a localized string similar to SUCCESS! The GOAL point has been reached..
 		/// </summary>
 		internal static string Text_SuccessGoalReached {
 			get {
 				return ResourceManager.GetString("Text_SuccessGoalReached", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to TIMEOUT..
+		/// </summary>
+		internal static string Text_Timeout01 {
+			get {
+				return ResourceManager.GetString("Text_Timeout01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to Too many idle steps..
+		/// </summary>
+		internal static string Text_TooManyIdleSteps01 {
+			get {
+				return ResourceManager.GetString("Text_TooManyIdleSteps01", resourceCulture);
+			}
+		}
+		
+		/// <summary>
+		///   Looks up a localized string similar to will be terminated..
+		/// </summary>
+		internal static string Text_WillBeTerminated01 {
+			get {
+				return ResourceManager.GetString("Text_WillBeTerminated01", resourceCulture);
 			}
 		}
 		
