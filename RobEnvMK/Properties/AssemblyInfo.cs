@@ -20,8 +20,8 @@ using System.Reflection;
 //
 // You can specify all values by your own or you can build default build and revision
 // numbers with the '*' character (the default):
-[assembly: AssemblyVersion ("5.7.1.0")]
-[assembly: AssemblyFileVersion ("5.7.1.0")]
+[assembly: AssemblyVersion ("5.7.1.1")]
+[assembly: AssemblyFileVersion ("5.7.1.1")]
 // The following attributes specify the key for the sign of your assembly. See the
 // .NET Framework documentation for more information about signing.
 // This is not required, if you don't want signing let these attributes like they're.

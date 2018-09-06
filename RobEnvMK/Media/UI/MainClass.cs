@@ -412,6 +412,7 @@ namespace RobEnvMK
 		void RaceReportHeader()
 		{
 			DateTime dtnow = DateTime.Now;
+			m_nPos = 0;
 			m_lsRobRaceResults.Add(global::RobEnvMK.Properties.Resources.Text_ReportDivider);
 			m_lsRobRaceResults.Add(global::RobEnvMK.Properties.Resources.Text_RaceResultsReport);
             m_lsRobRaceResults.Add(global::RobEnvMK.Properties.Resources.Text_ReportDivider);

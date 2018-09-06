@@ -140,12 +140,15 @@ report when the race is finished.
 
 Summary of the race rules:
 
-- robot can't not hit any walls, that's a game over condition
-- robot can't idle (not send any commands) for 2000 or more steps
-- robot can't be stuck within radius of 300 * robot_step_length for
-  10000 or more steps
+- robot can't hit any walls, that's a game over condition
+- robot can't idle (not send any commands) for more than MaxIdleSteps (*)
+- robot can't be stuck within radius of StuckRadius * Step for more than
+  MaxStuckSteps steps
 - robot which reaches the exit first, wins
 - environment stops when there are no more bots alive
+
+(*) MaxIdleSteps, StuckRadius, Step and MaxStuckSteps are configuration setup
+    parameters.
   
 Corresponding counters for idle or stuck robots are reset when robot sends
 the command or robot moves out of the 300 step size radius before they reach
@@ -176,7 +179,7 @@ Following bot control / query commands are currently supported:
  		size of the robot. E.g.: robot size = 2, step = 0.1 works well.
  		This command doesn't send response to robot.
  
- Turn [angle] - rotates the robot by angle [rad] to the right (angle < 0)
+ Turn <angle> - rotates the robot by angle [rad] to the right (angle < 0)
 			    or to the left (angle >= 0). Note that this is a relative
 		        angle of turn to the current robot's absolute angle in the
 		        environment's coordinates system. Please also note that
@@ -217,7 +220,7 @@ Following bot control / query commands are currently supported:
  ?Killed - check if the robot was killed in previous step, returns 'true'
 		   or 'false' string.
 		   
- ?Eval dist - query the points located at <dist> distance from the robot
+ ?Eval <dist> - query the points located at <dist> distance from the robot
 		 	  for their distances from the labirynth exit.
 		 	  It's like a ?Radar, but instead of returning distances to the
 		 	  obstacles, returns the negative values of distances of these
@@ -226,7 +229,7 @@ Following bot control / query commands are currently supported:
 		      algorithm (the greater the value returned from ?Eval, the closer
 		      given point is to the exit).
 		      
- ?Eval angle dist - similar to above, however queries only a single point
+ ?Eval <angle> <dist> - similar to above, however queries only a single point
 		 	  		at angle <angle> radians and <dist> distance from the
 		 			bot for that point's distance from exit, returns single
 		 			value.
@@ -363,7 +366,9 @@ Parameter Value
 
 E.g.:
 
-UpdateEvery 100
+MaxIdleSteps 4000
+StuckRadius 400
+MaxStuckSteps 15000
 CameraX 123.4
 CameraY -60
 CameraZ -344.0
@@ -392,12 +397,37 @@ CloseWhenAllBotsQuit True
 
 Description of the parameters:
 
-UpdateEvery - deprecated, has no effect.
+MaxIdleSteps - maximum amount / number of consecutive steps or main loop
+			   frames during which robot doesn't send any input / commands
+			   to the environment. When that number is exceeded, robot will
+			   be terminated.
+			   
+StuckRadius - this number multiplied by value of Step is a radius within which
+              robot operates (from certain start point or counter reset
+              point) without leaving this area for amount of steps or main
+			  loop frames defined by MaxStuckSteps before it is considered
+			  as stuck in this area or looping or just too slow. Robot is
+			  terminated if it cannot leave this radius before the counter
+              reaches MaxStuckSteps.
+              
+MaxStuckSteps - maximum amount / number of consecutive steps or main loop
+				frames during which robot doesn't leave the radius calculated
+				as StuckRadius * Step. The counter that counts the steps is
+				reset at the beginning or when robot leaves this radius before
+				counter reaches MaxStuckSteps. The new reference point is also
+				reset at that time as a new location from which the distance
+				is being measured and compared to value of StuckRadius * Step.
+				
 CameraX, CameraY, CameraZ - coordinates of the camera in the 3-D environment.
+
 LookAtX, LookAtY, LookAtZ - orientation of the camera in the 3-D environment.
+
 LightX, LightY, LightZ - coordinates of the light source.
+
 MapImagePath  - determines the path / filename to the world map bitmap file.
+
 PlugInCfgPath -  determines the path to the robots configuration file.
+
 The format if this file is as follows:
 
 Program Priority TextureFile
@@ -412,19 +442,29 @@ This file can be created manually or using Manage button on the Robot
 Status / Control dialog.
 
 RotateX, RotateY, RotateZ - camera rotation in all 3 axis.
+
 Step - determines the length of the single step performed by Move command.
+
 ShowOnScreenInfo - True / False, turns the displaying of the robot position,
 				   angle and command directly on the main windows where the
 				   world is rendered on or off.
+				   
 SightDistance - this will be the maximum possible radar distance reading.
                 Any obstacle further than this distance will not be seen.
+                
 RandomRobotStart - True / False, decides if the robot's initial coordinates
 				   are generated randomly or are predefined.
+				   
 RobotStartX, RobotStartY - initial coordinates of the robots.
+
 RobotSize - this defines how big the robot's body will be (diameter).
+
 HWVertexProc - True / False, enable or disable hardware vertex processing.
+
 VisualizeWorld - True / False, enable or disable main application window.
+
 ShowStatusWindow - True / False, enable or disable Robot Status / Control
                    window.
+                   
 CloseWhenAllBotsQuit - True / False, if True, application will quit when all
                        robots are killed.
